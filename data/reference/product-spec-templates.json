@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-11-18T22:17:40Z",
+  "source": "Primus product listing form",
+  "license": "Primus project content",
+  "coverage": "Category fields currently used by assets/js/commerce-features.js; keep this list synchronized with that form.",
+  "categories": {
+    "Fashion": [
+      {
+        "key": "brand",
+        "label": "Brand"
+      },
+      {
+        "key": "size",
+        "label": "Size"
+      },
+      {
+        "key": "size_system",
+        "label": "Size system"
+      },
+      {
+        "key": "color",
+        "label": "Color"
+      },
+      {
+        "key": "material",
+        "label": "Material"
+      },
+      {
+        "key": "fit",
+        "label": "Fit"
+      },
+      {
+        "key": "gender",
+        "label": "Designed for"
+      },
+      {
+        "key": "pattern",
+        "label": "Pattern"
+      },
+      {
+        "key": "care_instructions",
+        "label": "Care instructions"
+      },
+      {
+        "key": "country_of_origin",
+        "label": "Country of origin"
+      }
+    ],
+    "Electronics": [
+      {
+        "key": "brand",
+        "label": "Brand"
+      },
+      {
+        "key": "model",
+        "label": "Model"
+      },
+      {
+        "key": "model_number",
+        "label": "Model number"
+      },
+      {
+        "key": "condition",
+        "label": "Condition"
+      },
+      {
+        "key": "color",
+        "label": "Color"
+      },
+      {
+        "key": "screen_size",
+        "label": "Screen size"
+      },
+      {
+        "key": "storage",
+        "label": "Storage capacity"
+      },
+      {
+        "key": "memory",
+        "label": "RAM / memory"
+      },
+      {
+        "key": "processor",
+        "label": "Processor"
+      },
+      {
+        "key": "battery",
+        "label": "Battery"
+      },
+      {
+        "key": "connectivity",
+        "label": "Connectivity"
+      },
+      {
+        "key": "compatibility",
+        "label": "Compatibility"
+      },
+      {
+        "key": "power_source",
+        "label": "Power source"
+      },
+      {
+        "key": "warranty",
+        "label": "Warranty"
+      },
+      {
+        "key": "included_items",
+        "label": "Included in the box"
+      }
+    ],
+    "Home": [
+      {
+        "key": "brand",
+        "label": "Brand / maker"
+      },
+      {
+        "key": "material",
+        "label": "Material"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions"
+      },
+      {
+        "key": "weight",
+        "label": "Weight"
+      },
+      {
+        "key": "color",
+        "label": "Color"
+      },
+      {
+        "key": "room",
+        "label": "Recommended room / use"
+      },
+      {
+        "key": "care_instructions",
+        "label": "Care instructions"
+      },
+      {
+        "key": "assembly",
+        "label": "Assembly required"
+      },
+      {
+        "key": "included_items",
+        "label": "Included items"
+      },
+      {
+        "key": "warranty",
+        "label": "Warranty"
+      }
+    ],
+    "Beauty": [
+      {
+        "key": "brand",
+        "label": "Brand"
+      },
+      {
+        "key": "product_type",
+        "label": "Product type"
+      },
+      {
+        "key": "skin_hair_type",
+        "label": "Skin / hair type"
+      },
+      {
+        "key": "ingredients",
+        "label": "Ingredients"
+      },
+      {
+        "key": "volume",
+        "label": "Net volume / weight"
+      },
+      {
+        "key": "usage",
+        "label": "How to use"
+      },
+      {
+        "key": "expiry_date",
+        "label": "Expiry date",
+        "type": "date"
+      },
+      {
+        "key": "country_of_origin",
+        "label": "Country of origin"
+      },
+      {
+        "key": "safety_notes",
+        "label": "Safety notes"
+      }
+    ],
+    "Groceries": [
+      {
+        "key": "brand_or_producer",
+        "label": "Brand / producer"
+      },
+      {
+        "key": "origin",
+        "label": "Origin"
+      },
+      {
+        "key": "ingredients",
+        "label": "Ingredients"
+      },
+      {
+        "key": "weight_volume",
+        "label": "Net weight / volume"
+      },
+      {
+        "key": "expiry_date",
+        "label": "Expiry date",
+        "type": "date"
+      },
+      {
+        "key": "storage",
+        "label": "Storage instructions"
+      },
+      {
+        "key": "dietary_info",
+        "label": "Dietary information"
+      },
+      {
+        "key": "allergens",
+        "label": "Allergens"
+      },
+      {
+        "key": "packaging",
+        "label": "Packaging"
+      }
+    ],
+    "Services": [
+      {
+        "key": "service_type",
+        "label": "Service type"
+      },
+      {
+        "key": "delivery_mode",
+        "label": "On-site, remote, or pickup"
+      },
+      {
+        "key": "service_area",
+        "label": "Service area"
+      },
+      {
+        "key": "duration",
+        "label": "Typical duration"
+      },
+      {
+        "key": "booking_notice",
+        "label": "Booking notice"
+      },
+      {
+        "key": "included",
+        "label": "What is included"
+      },
+      {
+        "key": "requirements",
+        "label": "Customer requirements"
+      },
+      {
+        "key": "cancellation_policy",
+        "label": "Cancellation policy"
+      }
+    ],
+    "Accessories": [
+      {
+        "key": "brand",
+        "label": "Brand / maker"
+      },
+      {
+        "key": "material",
+        "label": "Material"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions"
+      },
+      {
+        "key": "color",
+        "label": "Color"
+      },
+      {
+        "key": "compatibility",
+        "label": "Compatibility"
+      },
+      {
+        "key": "finish",
+        "label": "Finish"
+      },
+      {
+        "key": "care_instructions",
+        "label": "Care instructions"
+      },
+      {
+        "key": "included_items",
+        "label": "Included items"
+      },
+      {
+        "key": "warranty",
+        "label": "Warranty"
+      }
+    ]
+  }
+}

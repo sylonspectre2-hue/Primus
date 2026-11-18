@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f0e8">
+    <meta name="description" content="Explore products from independent Ugandan sellers on Primus Marketplace.">
+    <title>Shop the Marketplace | Primus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/marketplace.css">
+</head>
+<body data-site-page="marketplace">
+    <div class="market-banner"><a href="../../index.html">primus<span>.</span></a><span>Local finds, delivered with care</span><a href="#seller">Sell on Primus <span aria-hidden="true">&rarr;</span></a></div>
+    <header class="market-header">
+        <div class="market-brand-row">
+            <a class="brand" href="../../index.html">primus<span>.</span></a>
+            <nav aria-label="Marketplace navigation"><a href="../../index.html">Home</a><a href="#catalog">Shop</a><a href="../../index.html#categories">Categories</a><a href="../../index.html#services">Services</a></nav>
+            <div class="market-actions"><button class="header-button" id="wishlistButton" aria-label="Wishlist">Wishlist <span id="wishlistCount">0</span></button><button class="header-button" id="cartOpen" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button></div>
+        </div>
+        <form class="market-search" id="searchForm" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            <label class="sr-only" for="catalogSearch">Search the marketplace</label>
+            <input id="catalogSearch" type="search" placeholder="Search products, shops, and more">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div><p class="eyebrow">Shop local, find more</p><h1>A good find is<br><em>closer than you think.</em></h1><p>Thoughtful products from independent sellers around Uganda.</p></div>
+            <div class="hero-count"><strong>01</strong><span>Discover<br>local favourites</span></div>
+        </section>
+
+        <section class="catalog-shell" id="catalog">
+            <div class="catalog-heading">
+                <div><p class="eyebrow">The Primus edit</p><h2>Shop all <em>finds.</em></h2></div>
+                <button class="filter-toggle" id="filterToggle" aria-expanded="true" aria-controls="filterPanel">Filters <span aria-hidden="true">+</span></button>
+            </div>
+            <div class="catalog-toolbar">
+                <p id="resultCount" aria-live="polite">Showing products</p>
+                <div class="toolbar-controls">
+                    <label class="sort-control">Sort by
+                        <select id="sortSelect" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: low to high</option>
+                            <option value="price-high">Price: high to low</option>
+                            <option value="rating">Top rated</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </label>
+                    <div class="view-control" role="group" aria-label="Product layout">
+                        <button class="view-button is-active" data-view="grid" aria-pressed="true" aria-label="Grid view"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h7v7H2zM11 2h7v7h-7zM2 11h7v7H2zM11 11h7v7h-7z"/></svg></button>
+                        <button class="view-button" data-view="list" aria-pressed="false" aria-label="List view"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 4h16M2 10h16M2 16h16"/></svg></button>
+                    </div>
+                    <label class="density-control">Cards
+                        <select id="densitySelect" aria-label="Card detail level">
+                            <option value="medium">Medium</option>
+                            <option value="compact">Compact</option>
+                            <option value="detailed">Detailed</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="catalog-layout" id="catalogLayout">
+                <aside class="filter-panel" id="filterPanel" aria-label="Filter products">
+                    <div class="filter-heading"><h3>Refine your search</h3><button id="clearFilters" type="button">Clear all</button></div>
+                    <label class="filter-field">Category
+                        <select id="categoryFilter"><option value="">All categories</option><option>Fashion</option><option>Electronics</option><option>Home</option><option>Beauty</option><option>Groceries</option><option>Services</option></select>
+                    </label>
+                    <fieldset class="filter-field price-filter"><legend>Price range (UGX)</legend><div><label class="sr-only" for="minPrice">Minimum price</label><input id="minPrice" type="number" min="0" placeholder="Min"><span>to</span><label class="sr-only" for="maxPrice">Maximum price</label><input id="maxPrice" type="number" min="0" placeholder="Max"></div></fieldset>
+                    <label class="filter-field">Brand
+                        <select id="brandFilter"><option value="">Any brand</option><option>Mirembe Studio</option><option>Kampala Craft Co.</option><option>Clay &amp; Form</option><option>Nile Botanics</option><option>Urban Tech UG</option><option>Good Grain</option></select>
+                    </label>
+                    <label class="check-filter"><input id="verifiedFilter" type="checkbox"><span>Verified sellers</span></label>
+                    <label class="filter-field">Customer rating
+                        <select id="ratingFilter"><option value="0">Any rating</option><option value="4">4 stars &amp; up</option><option value="4.5">4.5 stars &amp; up</option></select>
+                    </label>
+                    <label class="check-filter"><input id="stockFilter" type="checkbox"><span>In stock only</span></label>
+                    <label class="filter-field">Delivery
+                        <select id="deliveryFilter"><option value="">Any delivery</option><option value="same-day">Same-day</option><option value="standard">Standard</option></select>
+                    </label>
+                    <label class="filter-field">Condition
+                        <select id="conditionFilter"><option value="">Any condition</option><option value="new">New</option><option value="handmade">Handmade</option></select>
+                    </label>
+                    <label class="check-filter"><input id="saleFilter" type="checkbox"><span>Special offers</span></label>
+                    <div class="filter-note"><span class="verified-dot"></span> Shop with confidence from verified local sellers.</div>
+                </aside>
+
+                <div class="product-results">
+                    <div class="product-grid" id="productGrid" aria-live="polite"></div>
+                    <div class="empty-state" id="emptyState" hidden><span>Nothing here just yet.</span><p>Try changing a filter or search for something else.</p><button id="emptyClear" type="button">Clear filters</button></div>
+                </div>
+
+                <aside class="product-detail" id="productDetail" aria-label="Product details" hidden>
+                    <div id="detailContent"></div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="seller-cta" id="seller"><p class="eyebrow">Have something lovely to share?</p><h2>Your shop belongs<br>on <em>Primus.</em></h2><p>Get discovered by customers who want to shop local.</p><a href="../../index.html#sell">Start selling <span aria-hidden="true">&rarr;</span></a></section>
+    </main>
+
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-modal="true" role="dialog" hidden>
+        <div class="drawer-header"><div><p class="eyebrow">Your good finds</p><h2>Your bag <span id="drawerCount">0</span></h2></div><button id="cartClose" aria-label="Close shopping bag">&times;</button></div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty"><p>Your bag is taking a little breather.</p><a href="#catalog" id="continueShopping">Keep exploring <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="cart-footer"><div><span>Subtotal</span><strong id="cartSubtotal">UGX 0</strong></div><p>Delivery is calculated at checkout.</p><button id="checkoutButton" disabled>Continue to checkout <span aria-hidden="true">&rarr;</span></button></div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer class="market-footer"><a href="../../index.html">primus<span>.</span></a><span>Made for Uganda <span aria-hidden="true">&hearts;</span></span><a href="../../index.html#about">About Primus</a></footer>
+    <script src="../../assets/js/navigation.js"></script>
+    <script src="../../assets/js/marketplace.js"></script>
+</body>
+</html>

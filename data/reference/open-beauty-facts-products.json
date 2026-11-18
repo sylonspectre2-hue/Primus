@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-11-18T22:18:47Z",
+  "source": "Open Beauty Facts",
+  "license": "ODbL-1.0 (database); DbCL-1.0 (individual contents)",
+  "items": [
+    {
+      "code": "4005808278114",
+      "name": "nivea rich nourishing",
+      "brands": "",
+      "categories": [],
+      "quantity": "12",
+      "packaging": "HDPE",
+      "ingredients": "1 kilo",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    },
+    {
+      "code": "8901030913013",
+      "name": "Vaseline health brightening",
+      "brands": "Vaseline",
+      "categories": [],
+      "quantity": "725ml",
+      "packaging": "",
+      "ingredients": "",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    },
+    {
+      "code": "6161101667142",
+      "name": "Jamaa Soap",
+      "brands": "",
+      "categories": [],
+      "quantity": "",
+      "packaging": "",
+      "ingredients": "",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    },
+    {
+      "code": "3574661783345",
+      "name": "T/Gel anti dandruff shampoo 3% salicylic acid",
+      "brands": "Neutrogena",
+      "categories": [],
+      "quantity": "",
+      "packaging": "",
+      "ingredients": "",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    },
+    {
+      "code": "5060453450826",
+      "name": "Sunblock",
+      "brands": "Rivaj",
+      "categories": [
+        "en:suncare",
+        "en:in-sun-protections",
+        "en:sunscreen"
+      ],
+      "quantity": "100ml",
+      "packaging": "",
+      "ingredients": "",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    },
+    {
+      "code": "8690586000185",
+      "name": "Emotion Natural Breeze",
+      "brands": "Emotion",
+      "categories": [
+        "en:Deoderant"
+      ],
+      "quantity": "50ml",
+      "packaging": "",
+      "ingredients": "",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    },
+    {
+      "code": "6161100042896",
+      "name": "leave in treatment",
+      "brands": "Miadi",
+      "categories": [],
+      "quantity": "1",
+      "packaging": "",
+      "ingredients": "",
+      "allergens": "",
+      "nutriments_per_100g": {}
+    }
+  ],
+  "coverage": "First API page only, up to 100 records; community-contributed and not exhaustive or guaranteed accurate.",
+  "attribution": "Contains data from Open Beauty Facts",
+  "attribution_url": "https://world.openbeautyfacts.org",
+  "terms_url": "https://world.openbeautyfacts.org/terms-of-use",
+  "country": "Uganda"
+}
